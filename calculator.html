@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body { 
+    background-color: Beige; 
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Calculator Body -->
+<div class="calc-body">
+
+<!-- Calculator Display Screen -->
+<div class="calc-screen">
+    <div id="calc-operation">0</div>
+    <div id="calc-typed">0</div>
+</div>
+
+<!-- Calculator Buttons -->
+<div class="calc-button-row">
+    <button class="ac" onclick="clearDisplay()">AC</button>
+    <button class="opt" onclick="appendToDisplay('+')">+</button>
+    <button class="opt" onclick="appendToDisplay('%')">%</button>
+    <button class="opt" onclick="appendToDisplay('/')">&#247;</button>
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button class="opt" onclick="appendToDisplay('*')">&#215;</button>
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button class="opt" onclick="appendToDisplay('-')">&#8722;</button>
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button class="opt" onclick="calculate()">=</button>
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('.')">.</button>
+    <button onclick="deleteLast()">⌫</button>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
